@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+@font-face {
+    font-family: candy-cane;
+    src: url(./fonts/CandyCane.ttf);
+}
+@font-face{
+    font-family: granny;
+    src: url(./fonts/GrannyRegular.ttf);
+}
+
+h2 {
+    font-family: candy-cane;
+    font-size: 2.75rem;
+}
+
+h3 {
+    font-family: granny;
+    font-size: 2rem;
+}
+
+.navbar {
+    height: 6rem;
+}
+
+.m-section {
+    margin-top: 7rem;
+}
+
+.aboutme-section header {
+    margin-bottom: 8rem;
+}
+
+.tj {
+    height: 15rem;
+    float: left;
+    shape-outside: circle();
+}
+
+.aboutme-section p {
+    text-align: justify;
+}
+
+.services-section p {
+    /* text-align: center; */
+    width: 75%;
+    margin: 0   auto;
+}
+
+.treatment {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.logo-img {
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.underlineAnimate {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.underlineAnimate::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underlineAnimate:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
