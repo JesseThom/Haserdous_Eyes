@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{
+body {
     background-color: black;
 }
 
@@ -11,7 +11,8 @@ body{
     font-family: candy-cane;
     src: url(./fonts/CandyCane.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: granny;
     src: url(./fonts/GrannyRegular.ttf);
 }
@@ -32,6 +33,7 @@ h3 {
 
 .m-section {
     margin-top: 7rem;
+    margin-bottom: 5rem;
 }
 
 .aboutme-section header {
@@ -54,7 +56,7 @@ h3 {
 
 .services-section p {
     width: 75%;
-    margin: 0   auto;
+    margin: 0 auto;
 }
 
 .treatment {
@@ -90,4 +92,30 @@ h3 {
 .underlineAnimate:hover::after {
     transform: scaleX(1);
     transform-origin: center;
+}
+
+.carousel-item  img{
+    max-height: 80vh;
+}
+
+.contact-background {
+    text-align: center;
+    /* color: #056839; */
+    background-image: url("./imgs/map.JPG");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 75vh;
+}
+
+.contact-section {
+    margin-bottom: 0;
+}
+
+.btn-social>img {
+    height: 2rem;
+}
+.calendar {
+    width: 90%;
 }
